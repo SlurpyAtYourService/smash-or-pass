@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smash or Pass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="homepage">
+            <h1>Smash or Pass</h1>
+            <h2>Available Groups</h2>
+            <ul id="group-list"></ul>
+            <button id="create-group-btn">Create New Group</button>
+        </div>
+        <div id="create-group" class="hidden">
+            <h2>Create Group</h2>
+            <input type="text" id="group-name" placeholder="Group Name">
+            <select id="game-mode">
+                <option value="mode1">Game Mode 1</option>
+                <option value="mode2">Game Mode 2</option>
+            </select>
+            <button id="create-group-submit">Create Group</button>
+            <button id="back-btn">Back</button>
+        </div>
+        <div id="join-group" class="hidden">
+            <h2>Join Group</h2>
+            <input type="text" id="username" placeholder="Username">
+            <button id="join-group-submit">Join Group</button>
+            <button id="back-btn-join">Back</button>
+        </div>
+        <div id="game" class="hidden">
+            <h2>Username: <span id="user-display"></span></h2>
+            <div id="image-container">
+                <div id="image-name"></div>
+                <img id="game-image" src="" alt="Game Image">
+            </div>
+            <div id="choices">
+                <button id="smash-btn">Smash</button>
+                <button id="pass-btn">Pass</button>
+            </div>
+            <div id="timer">10</div>
+            <div id="results" class="hidden">
+                <h3>Results</h3>
+                <p id="results-display"></p>
+                <button id="next-round-btn">Next Round</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
